@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const content = document.getElementById("content");
 
     unlockButton.addEventListener("click", function () {
-        if (passwordInput.value.toUpperCase() === "i", "I") {
+        if (passwordInput.value.toUpperCase() === "I") {
             lockScreen.style.display = "none";
             content.style.display = "flex";
         } else {
