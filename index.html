@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Group & Immune Response</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lockScreen">
+    <img src="images/logo.svg" id="logo" alt="Logo">
+    <h3>Enter the letter from the previous station (#3)</h3>
+    <input type="text" id="passwordInput" maxlength="1" placeholder="Enter 1-letter password">
+    <button id="unlockButton">unlock</button>
+</div>
+
+<div id="content">
+    <img src="images/logo.svg" id="logoContent" alt="Logo">
+    <h2>RISK GROUP &<br>IMMUNE RESPONSE</h2>
+    <p>Various groups in society are vulnerable to contracting TOE-ViR24 and developing symptoms. Isolated individuals, who do not routinely make contact with others in public spaces and thus possess weakened immune systems, are at higher risk of a quick-onset infection and generally show more severe symptoms. While this bears resemblance to viruses such as influenza, it has been discovered that individuals with insufficiently diverse social environments are also similarly at risk. 
+    </p>
+    <p>        Individuals with neurological or hormonal irregularities might also be more vulnerable to developing serious symptoms when infected with TOE-ViR24. This connection remained a mystery at first, until MRI scanning of infected individuals revealed that TOE-ViR24 specifically targets areas of the brain, in a manner more similar to that of viral encephalitis. 
+    </p>
+    <div class="instructions-container">
+        <img src="images/instructions.svg" id="instructions" alt="Instructions">
+    </div>
+
+    <div id="game">
+        <div class="description-left">
+            <div class="outline-wrapper">
+                <img src="images/outline.svg" class="outline" alt="Outline">
+                <div class="description-text">
+                    <p>Solitary Worker with Narrow Focus</p>
+                </div>
+                <div class="choices">
+                    <img src="images/lowrisk_unchecked.svg" class="choice" data-answer="high" alt="Low Risk">
+                    <img src="images/mediumrisk_unchecked.svg" class="choice" data-answer="high" alt="Moderate Risk">
+                    <img src="images/highrisk_unchecked.svg" class="choice" data-answer="high" alt="High Risk">
+                </div>
+            </div>
+        </div>
+
+        <div class="description-right">
+            <div class="outline-wrapper">
+                <img src="images/outline.svg" class="outline" alt="Outline">
+                <div class="description-text">
+                    <p>Active Community Member with a Robust Routine</p>
+                </div>
+                <div class="choices">
+                    <div class="choice-group">
+                        <img src="images/lowrisk_unchecked.svg" class="choice" data-answer="low" alt="Low Risk">
+                        <img src="images/mediumrisk_unchecked.svg" class="choice" data-answer="moderate" alt="Moderate Risk">
+                        <img src="images/highrisk_unchecked.svg" class="choice" data-answer="high" alt="High Risk">
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <div class="description-left">
+            <div class="outline-wrapper">
+                <img src="images/outline.svg" class="outline" alt="Outline">
+                <div class="description-text">
+                    <p>Engaged Professional with Diverse Interactions</p>
+                </div>
+                <div class="choices">
+                    <img src="images/lowrisk_unchecked.svg" class="choice" data-answer="low" alt="Low Risk">
+                    <img src="images/mediumrisk_unchecked.svg" class="choice" data-answer="low" alt="Moderate Risk">
+                    <img src="images/highrisk_unchecked.svg" class="choice" data-answer="low" alt="High Risk">
+                </div>
+            </div>
+        </div>
+
+        <div class="description-right">
+            <div class="outline-wrapper">
+                <img src="images/outline.svg" class="outline" alt="Outline">
+                <div class="description-text">
+                    <p>Moderately Active Individual with Balanced Habits</p>
+                </div>
+                <div class="choices">
+                    <img src="images/lowrisk_unchecked.svg" class="choice" data-answer="moderate" alt="Low Risk">
+                    <img src="images/mediumrisk_unchecked.svg" class="choice" data-answer="moderate" alt="Moderate Risk">
+                    <img src="images/highrisk_unchecked.svg" class="choice" data-answer="moderate" alt="High Risk">
+                </div>
+            </div>
+        </div>
+
+        <div class="description-left">
+            <div class="outline-wrapper">
+                <img src="images/outline.svg" class="outline" alt="Outline">
+                <div class="description-text">
+                    <p>Focused Specialist with Limited Social Network</p>
+                </div>
+                <div class="choices">
+                    <img src="images/lowrisk_unchecked.svg" class="choice" data-answer="moderate" alt="Low Risk">
+                    <img src="images/mediumrisk_unchecked.svg" class="choice" data-answer="moderate" alt="Moderate Risk">
+                    <img src="images/highrisk_unchecked.svg" class="choice" data-answer="moderate" alt="High Risk">
+                </div>
+            </div>
+        </div>
+
+        <div class="description-right">
+            <div class="outline-wrapper">
+                <img src="images/outline.svg" class="outline" alt="Outline">
+                <div class="description-text">
+                    <p>Sensitive Individual with Specialised Challenges</p>
+                </div>
+                <div class="choices">
+                    <img src="images/lowrisk_unchecked.svg" class="choice" data-answer="low" alt="Low Risk">
+                    <img src="images/mediumrisk_unchecked.svg" class="choice" data-answer="low" alt="Moderate Risk">
+                    <img src="images/highrisk_unchecked.svg" class="choice" data-answer="low" alt="High Risk">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="fade">
+        Congratulations! You have correctly linked the descriptions to the categories. The letter of this station is
+    </div>
+
+    <div id="message" class="fade">
+        <img src="images/answer.svg" alt="Answer">
+    </div>
+    
+    <div id="defaultMessage">
+        Please select the correct options to proceed.
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

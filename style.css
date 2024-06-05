@@ -1,0 +1,212 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #3C0C3E;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(253, 241, 243);
+    overflow-y: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#lockScreen, #content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#lockScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#passwordInput {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #3C0C3E;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+#unlockButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    background: linear-gradient(45deg, #FF8C8C, #FF3D3D);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#logoContent {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    padding-left: 30px; /* Adjust value as needed */
+    padding-right: 30px; /* Adjust value as needed */
+}
+
+
+
+p {
+    margin: 0 20px 20px; /* Added bottom margin for more space */
+    text-align: justify;
+}
+
+.instructions-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 0; /* Removed bottom margin */
+}
+
+#game {
+    margin: 0; /* Removed margin to reduce space */
+    width: 100%;
+    max-width: 600px;
+}
+
+.description-left,
+.description-right {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+}
+
+.description-left .outline-wrapper,
+.description-right .outline-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.description-left .description-text,
+.description-right .description-text {
+    flex: 1;
+    z-index: 1;
+}
+
+.description-left .description-text {
+    text-align: left;
+}
+
+.description-right .description-text {
+    text-align: left;
+}
+
+.description-left .choices,
+.description-right .choices {
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+}
+
+.description-left .choices {
+    margin-left: 0px;
+}
+
+.description-right .choices {
+    margin-right: 0px;
+}
+
+.description-text p {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 0.7em;
+}
+
+.outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.choice {
+    width: 40px;
+    cursor: pointer;
+}
+
+#congratsMessage, #message {
+    font-size: 1.2em;
+    opacity: 0;
+    display: none;
+}
+
+#congratsMessage {
+    color: red;
+    animation: fade-in 1s linear forwards;
+}
+
+#message {
+    animation: fade-in 1s linear forwards;
+}
+
+#defaultMessage {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    color: #3C0C3E;
+}
+
+.fade-in {
+    animation: fade-in 1s linear forwards;
+}
+
+.fade-out {
+    animation: fade-out 1s linear forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
