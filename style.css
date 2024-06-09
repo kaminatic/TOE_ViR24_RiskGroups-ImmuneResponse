@@ -74,8 +74,6 @@ h2 {
     padding-right: 30px; /* Adjust value as needed */
 }
 
-
-
 p {
     margin: 0 20px 20px; /* Added bottom margin for more space */
     text-align: justify;
@@ -93,8 +91,7 @@ p {
     max-width: 600px;
 }
 
-.description-left,
-.description-right {
+.description {
     display: flex;
     align-items: center;
     margin: 10px 0;
@@ -103,8 +100,7 @@ p {
     width: 100%;
 }
 
-.description-left .outline-wrapper,
-.description-right .outline-wrapper {
+.outline-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,33 +109,17 @@ p {
     padding: 20px;
 }
 
-.description-left .description-text,
-.description-right .description-text {
+.description-text {
     flex: 1;
     z-index: 1;
-}
-
-.description-left .description-text {
     text-align: left;
 }
 
-.description-right .description-text {
-    text-align: left;
-}
-
-.description-left .choices,
-.description-right .choices {
+.choices {
     display: flex;
     gap: 20px;
     z-index: 1;
-}
-
-.description-left .choices {
-    margin-left: 0px;
-}
-
-.description-right .choices {
-    margin-right: 0px;
+    margin: 0; /* Ensure uniform alignment */
 }
 
 .description-text p {
@@ -183,6 +163,24 @@ p {
     margin-right: 20px;
     font-size: 1.2em;
     color: #3C0C3E;
+}
+
+#hintContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#hintButton {
+    width: 50px;
+    cursor: pointer;
+}
+
+#hintText {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300; /* Light */
+    font-size: 10px;
+    display: none;
+    margin-top: 10px;
 }
 
 .fade-in {
