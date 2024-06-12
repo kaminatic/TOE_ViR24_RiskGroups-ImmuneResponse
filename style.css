@@ -181,6 +181,7 @@ p {
     font-size: 10px;
     display: none;
     margin-top: 10px;
+    text-align: center;
 }
 
 .fade-in {
