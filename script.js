@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         console.log("All correct:", allCorrect);
         console.log("Number of selected choices:", document.querySelectorAll('.choice.selected').length);
-        if (allCorrect && document.querySelectorAll('.choice.selected').length === 6) {
+        if (allCorrect && document.querySelectorAll('.choice.selected').length === 3) {
             defaultMessage.style.display = "none";
             congratsMessage.style.display = "block";
             congratsMessage.classList.add("fade-in");
