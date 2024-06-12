@@ -21,11 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const correctAnswers = {
         "Solitary Worker with Narrow Focus": "high",
-        "Active Community Member with a Robust Routine": "low",
         "Engaged Professional with Diverse Interactions": "low",
-        "Moderately Active Individual with Balanced Habits": "moderate",
-        "Focused Specialist with Limited Social Network": "moderate",
-        "Sensitive Individual with Specialised Challenges": "high"
+        "Focused Specialist with Limited Social Network": "moderate"
     };
 
     choices.forEach(choice => {
